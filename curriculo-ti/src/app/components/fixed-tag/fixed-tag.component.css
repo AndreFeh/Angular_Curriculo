@@ -1,0 +1,37 @@
+.fixed_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+
+.contents{
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.contents > h1{
+  font-weight: 400;
+  font-size: 28px;
+}
+.contents>ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 30px;
+  gap: 15px;
+}
+.contents>ul>li{
+  font-size: 15px;
+  list-style: none; /* remove a bolinha padrão */
+}
+.contents>ul>li::before{
+  content: "|";       /* insere a barra vertical */
+  /* color: inherit;       cor da barra */
+  margin-right: 8px;  /* espaço entre a barra e o texto */
+}

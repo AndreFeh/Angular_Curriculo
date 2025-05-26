@@ -1,0 +1,40 @@
+<div class="left_container">
+  <div class="pessoal">
+    <h2>Contatos</h2>
+    <div>
+      <p>{{name}}</p>
+      <p>CNH: {{cnh}}</p>
+      <p>{{cpf}}</p>
+      <div>
+      <p>{{address}}</p>
+      </div>
+      <p>Data Nascimento: {{date}}</p>
+      <a [href]="'mailto:' + email" target="_blank">{{email}}</a>
+      <a [href]="formatLink(linkedin)" target="_blank">{{linkedin}}</a>
+      <a a [href]="formatLink(github)" target="_blank">{{github}}</a>
+      <a [href]="linkWpp" target="_blank">{{whatsapp}}</a>
+    </div>
+  </div>
+  <div class="idiomas">
+    <h2>Idiomas</h2>
+    <div>
+      <table>
+        <tbody>
+            <tr *ngFor="let language of languages">
+              <td>{{language.idioma}}</td>
+              <td>{{language.nivel}}</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="soft-skills">
+    <h2>Competências</h2>
+    <div>
+      <ul>
+        <li *ngFor="let skill of softSkills">{{skill}}</li>
+      </ul>
+
+    </div>
+  </div>
+</div>

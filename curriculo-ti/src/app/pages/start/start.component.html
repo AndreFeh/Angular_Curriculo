@@ -1,0 +1,36 @@
+<div class="start_container">
+  <div class="start_nome">
+    <app-fixed-tag
+      [name]="perfil.nome"
+      [titles]="perfil.titulo"
+    />
+  </div>
+  <div class="start_contents">
+    <div class="start_left">
+        <app-left-tag
+          [name]="perfil.nome"
+          [cpf]="perfil.cpf"
+          [cnh]="perfil.cnh"
+          [address]="perfil.endereco"
+          [date]="perfil.dataNasc"
+          [email]="perfil.email"
+          [linkedin]="perfil.linkedin"
+          [github]="perfil.github"
+          [whatsapp]="perfil.whatsapp"
+          [linkWpp]="linkWpp"
+          [languages]="perfil.languages"
+          [softSkills]="perfil.softSkills"
+        />
+      </div>
+      <div class="start_right">
+        <app-right-tag
+          [presentings]="perfil.apresentacao"
+          [expProf]="convertedExpProf"
+          [freelances]="convertedFreelance"
+          [academies]="convertedAcademy"
+          [courses]="convertedCourse"
+          [skills]="perfil.hardSkills"
+        />
+    </div>
+  </div>
+</div>

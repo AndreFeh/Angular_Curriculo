@@ -1,0 +1,63 @@
+<div class="right_container">
+  <!-- Apresentação -->
+  <section class="presenting">
+    <h2>Sobre Mim</h2>
+    <div  *ngFor="let presenting of presentings">
+      <p>{{ presenting }}</p>
+    </div>
+  </section>
+
+  <!-- Experiência Profissional -->
+  <section >
+    <h2>Experiência Profissional</h2>
+    <div class="right_section" *ngFor="let exp of expProf" >
+      <div class="dates">
+        <h4>{{ exp.workName }}</h4>
+        <span>{{ exp.wordDateInit }} - {{ exp.wordDateEnd }}</span>
+      </div>
+      <p class="role">{{ exp.workArea }}</p>
+      <p>{{ exp.workDescription }}</p>
+    </div>
+  </section>
+
+  <!-- Voluntários e Freelances -->
+  <section >
+    <h2>Projetos Freelances</h2>
+    <div class="right_section" *ngFor="let freelance of freelances" >
+      <h4>{{ freelance.freelanceTitle }}</h4>
+      <p>{{ freelance.freelanceCompany }}</p>
+      <p>{{ freelance.freelanceDescription }}</p>
+    </div>
+  </section>
+
+  <!-- Formação Acadêmica -->
+  <section >
+    <h2>Formação Acadêmica</h2>
+    <div class="right_section" *ngFor="let academy of academies" >
+      <div class="dates">
+        <h4>{{ academy.academyUniversity }}</h4>
+        <span>{{ academy.academyDateInit }} - {{ academy.academyDateEnd }}</span>
+      </div>
+      <p>{{ academy.academyCourse }}</p>
+      <p>{{ academy.academyDescription }}</p>
+    </div>
+  </section>
+
+  <!-- Cursos -->
+  <section >
+    <h2>Formação Complementar</h2>
+    <div  class="right_section" >
+      <p *ngFor="let course of courses">{{ course.courseType }}: {{ course.courseName }} - {{ course.courseHour }}h</p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section >
+    <h2>Hard Skills</h2>
+    <div class="right_section">
+      <ul class="skills">
+        <li *ngFor="let skill of skills">{{ skill }}</li>
+      </ul>
+    </div>
+  </section>
+</div>

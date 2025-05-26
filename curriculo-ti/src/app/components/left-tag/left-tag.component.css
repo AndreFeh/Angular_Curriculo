@@ -1,0 +1,78 @@
+.left_container{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  width: 100%;
+}
+
+.left_container h2{
+  font-size:22px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(85, 85, 85, 0.5);
+}
+.left_container ul{
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.left_container li{
+  /* text-decoration: none; */
+  list-style: none;
+}
+
+.left_container table {
+  width: auto;
+  border-collapse: separate; /* ok */
+  border-spacing: 0 10px;
+  table-layout: fixed;
+}
+
+.left_container th,
+.left_container td {
+  text-align: left;
+}
+.left_container table {
+  border-collapse: separate;
+  border-spacing: 0 10px; /* espaço entre as linhas */
+}
+
+.pessoal> div{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px ;
+  gap: 5px;
+  width: 100%;
+    padding: 10px;
+
+}
+
+.pessoal> div>div{display:flex; flex-wrap: nowrap;flex-direction: row;}
+.pessoal > div,
+.idiomas > div,
+.soft-skills > div {
+  margin: 15px 0;
+  padding: 10px;
+}
+
+.pessoal a {
+  text-decoration: none;
+  color: inherit;
+}
+.pessoal a:hover {font-weight: bold;}
+
+.idiomas>div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;  padding: 10px;
+
+  margin: 10px 0px ;
+}
+.soft-skills>div{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px ;
+  width: 100%;  padding: 10px;
+
+  gap: 5px;
+}
